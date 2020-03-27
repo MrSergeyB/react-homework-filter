@@ -1,5 +1,6 @@
 import React from "react";
 import "./project-list.css";
+import PropTypes from "prop-types";
 
 const ProjectList = props => {
   const {projects} = props;
@@ -15,6 +16,10 @@ const ProjectList = props => {
       })}
     </div>
   );
+};
+
+ProjectList.propTypes = {
+  projects: PropTypes.object
 };
 
 export default ProjectList;

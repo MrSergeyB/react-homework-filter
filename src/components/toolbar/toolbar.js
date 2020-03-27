@@ -1,5 +1,7 @@
 import React from "react";
 import "./toolbar.css";
+import PropTypes from "prop-types";
+
 const Toolbar = props => {
   const {filters, selected, onSelectFilter} = props;
 
@@ -20,6 +22,12 @@ const Toolbar = props => {
       </ul>
     </div>
   );
+};
+
+Toolbar.propTypes = {
+  filters: PropTypes.string,
+  selected: PropTypes.string,
+  onSelectFilter: PropTypes.func
 };
 
 export default Toolbar;
