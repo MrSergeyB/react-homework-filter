@@ -1,0 +1,14 @@
+.filters-ul {
+  display: flex;
+}
+.filters {
+  list-style: none;
+  padding: 0.5em;
+  border: 1px solid #555555;
+  margin: 0.1em;
+}
+
+.active {
+  background-color: #555555;
+  color: white;
+}
